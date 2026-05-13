@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mock Kiosk Service</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+  <div class="page">
+    <h1>Mock Kiosk Service</h1>
+
+    <div class="card">
+      <h2>Server Settings</h2>
+      <div class="grid">
+        <label>
+          Port
+          <input id="serverPort" type="number" />
+        </label>
+        <label>
+          Response Delay (ms)
+          <input id="responseDelayMs" type="number" />
+        </label>
+        <label>
+          Force Error
+          <select id="forceError">
+            <option value="false">false</option>
+            <option value="true">true</option>
+          </select>
+        </label>
+        <label>
+          Error Status Code
+          <input id="errorStatusCode" type="number" />
+        </label>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Candidate Kiosk</h2>
+      <div class="grid">
+        <label>
+          Kiosk ID
+          <input id="candidateKioskId" type="text" />
+        </label>
+        <label>
+          Kiosk Name
+          <input id="candidateKioskName" type="text" />
+        </label>
+        <label>
+          Location ID
+          <input id="candidateLocationId" type="number" />
+        </label>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="row-between">
+        <h2>Kiosks</h2>
+        <button id="addKioskBtn" type="button">Add kiosk</button>
+      </div>
+      <div id="kiosksContainer"></div>
+    </div>
+
+    <div class="actions">
+      <button id="reloadBtn" type="button">Reload</button>
+      <button id="saveBtn" type="button">Save</button>
+    </div>
+
+    <div class="card">
+      <h2>Status</h2>
+      <div id="statusMessage">Ready.</div>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+
+</html>

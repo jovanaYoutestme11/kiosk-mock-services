@@ -1,0 +1,29 @@
+{
+  "server": {
+    "port": 4000,
+    "responseDelayMs": 0,
+    "forceError": false,
+    "errorStatusCode": 503
+  },
+  "candidateKiosk": {
+    "location_id": 2,
+    "kiosk_id": "16",
+    "kiosk_name": "16"
+  },
+  "kiosks": [
+    {
+      "kiosk_id": "19",
+      "kiosk_name": "19",
+      "device_status": "degraded",
+      "app_status": "running",
+      "last_seen": "2026-03-06T10:20:15Z"
+    },
+    {
+      "kiosk_id": "22",
+      "kiosk_name": "20",
+      "device_status": "degraded",
+      "app_status": "stopped",
+      "last_seen": "2026-03-06T10:10:02Z"
+    }
+  ]
+}
