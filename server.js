@@ -150,7 +150,7 @@ app.post("/mock/config", (req, res) => {
 });
 
 const config = readConfig();
-const port = config.server?.port || 3000;
+const port = process.env.PORT || config.server?.port || 3000;
 
 app.listen(port, () => {
   console.log(`Mock kiosk service running on http://localhost:${port}`);
